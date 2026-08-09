@@ -19,6 +19,20 @@ body {
     border-radius: 2px;
 }
 
+.hamburger-in {
+    width: 35px;
+    cursor: pointer;
+    margin: 20px;
+}
+
+.hamburger-in span {
+    display: block;
+    height: 4px;
+    background: #b8b7b7;
+    margin: 6px 0;
+    border-radius: 2px;
+}
+
 /* Sidebar Navigation */
 #sidebar {
     position: fixed;
