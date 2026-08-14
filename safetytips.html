@@ -7,21 +7,8 @@
     <link rel="stylesheet" href="safetytips.css">
 </head>
 <body>
-    <!-- Hamburger Button -->
-    <div class="hamburger" onclick="toggleNav()">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-
-    <!-- Slide-Out Navigation Bar -->
-    <nav id="sidebar">
+    <div class="off-screen-menu"> 
         <ul>
-            <div class="hamburger-in" onclick="toggleNav()">
-            <span></span>
-            <span></span>
-            <span></span>
-                </div>
             <li>
                 <a href="home.html">
                     <img src="Images\Icons\1Home.png" class="icon">
@@ -31,7 +18,6 @@
                     </div>
                 </a>
             </li>
-
             <li>
                 <a href="SelfDefence.html">
                     <img src="Images\Icons\2Self defence techniques.png" class="icon">
@@ -41,17 +27,15 @@
                     </div>
                 </a>
             </li>
-
             <li>
-                <a href="strategies.html">
-                    <img src="Images\Icons\3Strategies.png" class="icon">
+                <a href="Facts.html">
+                    <img src="Images\Icons\5Facts.png" class="icon">
                     <div class="iconinfo">
-                        <h4>Strategies</h4>
-                        <p>Strategies that might save you</p>
+                        <h4>Facts</h4>
+                        <p>Important and Interesting Facts </p>
                     </div>
                 </a>
             </li>
-
             <li>
                 <a href="safetytips.html">
                     <img src="Images\Icons\4Safety tips.png" class="icon">
@@ -61,18 +45,14 @@
                     </div>
                 </a>
             </li>
-
-            <li>
-                <a href="Facts.html">
-                    <img src="final-project\Images\Icons\5Facts.png" class="icon">
-                    <div class="iconinfo">
-                        <h4>Facts</h4>
-                        <p>Important and Interesting Facts </p>
-                    </div>
-                </a>
-            </li>
-            
         </ul>
+    </div>
+    <nav>
+        <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </nav>
 <script src="script.js"></script>
 </body>
