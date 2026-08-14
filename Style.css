@@ -167,3 +167,31 @@ body {
     color: #555;
 }
 
+.container-main {
+    height: 350px;
+    width: 600px;
+    background:#ffb6c1;
+    border-radius: 5%;
+    margin-left: 50%;
+    padding-top: 1px;
+    padding-bottom: 10px;
+} 
+
+.container1 {
+    height: 600px;
+    width: 500px;
+    margin: 10%;
+
+}
+
+.headings{
+    font-family: serif;
+    font-size:120%;
+    Margin-top: 4%;
+}
+
+.points {
+    font-family: serif;
+    font-size: 80%;
+    font: bold;
+}
