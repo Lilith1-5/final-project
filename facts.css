@@ -1,0 +1,135 @@
+/* off-screen-menu*/
+.off-screen-menu {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: -450px;
+  max-width: 450px;
+  height: 100vh;
+  background-color: #333;
+  color: #5e5c5c;
+  transition: left 0.3s ease-in-out;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-top: 100px;
+  gap: 40px;
+}
+
+.nav {
+    padding: 1rem;
+    display: flex;
+    background-color: #333;
+}
+
+.ham-menu {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.ham-menu span {
+    display: block;
+    height: 4px;
+    width: 80%;
+    background-color: #3a3838;
+    margin: 6px 0;
+    transition: all 0.3s ease-in-out;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+}
+
+.ham-menu.open span {
+    background-color: #d7d5d5;
+}
+
+.ham-menu span:nth-child(1) {
+    top: 25%;
+}
+
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+
+.ham-menu.open span:nth-child(1) {
+    transform: translate(-50%, -50%) rotate(45deg);
+    top: 50%;
+}
+
+.ham-menu.open span:nth-child(2) {
+    opacity: 0;
+}
+.ham-menu.open span:nth-child(3) {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    top: 50%;
+}
+
+.off-screen-menu.open {
+  left: 0;
+}
+
+.off-screen-menu ul {
+    list-style:none;
+    padding: 0px;
+    margin: 0px;
+
+}
+
+.off-screen-menu li {
+    justify-content: center;
+    margin: 50px 0;
+    display: flex;
+    list-style: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+}
+
+.icon {
+    width: 55px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Icons & info */
+.iconinfo {
+    position: absolute;
+    left: 90px;
+    top: 0;
+    transform: translateY(-50%);
+    background: rgba(20, 20, 20, 0.9); 
+    color: #fff;
+    padding: 12px 16px;
+    border-radius: 10px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s;
+    width: 180px;              
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);;
+}
+
+.iconinfo h4 {
+    color: #fcb0bb;
+    margin: 0;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.iconinfo p {
+    color: #f0dcdf;
+    margin: 4px 0 0;
+    font-size: 13px;
+}
+
+.off-screen-menu li:hover .iconinfo {
+    opacity: 0.95;
+    transform: translateY(-50%) translateX(5px);
+}
