@@ -133,3 +133,64 @@
     opacity: 0.95;
     transform: translateY(-50%) translateX(5px);
 }
+
+/* Title */
+.title {
+    text-align: center;
+    margin-top: 20px;
+}
+.title h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #5e0d19;
+}
+.title p {
+    font-size: 16px;
+    color: #494747;
+}
+
+.main-container {
+    display: flex;
+    align-items: flex-start;   
+    justify-content: center;   
+    gap: 40px;                 
+    padding: 40px;
+}
+
+.text-container {
+    background: #fdfcfc;
+    border: 2px solid #5e0d19;
+    border-radius: 12px;
+    padding: 25px;
+    max-width: 500px;
+}
+
+.headings{
+    font-family: serif;
+    font-size:130%;
+    Margin-top: 4%;
+}
+
+.points {
+    font-family: serif;
+    font-size: 90%;
+    font: bold;
+}
+
+/* Self Defence Icon */
+.selfdefenceicon {
+    width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: -150px;
+}
+
+@media (max-width: 600px) {
+    .content-box {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.selfdefence-icon {
+        margin-bottom: 20px;
+}
