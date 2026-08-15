@@ -200,17 +200,20 @@
     padding: 40px;
     background-color: #ffe1e1;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 40px;
+    border-radius: 10px;
 }
-/* Techniques Title*/
-.technique-heading {
+
+/* Section Title */
+.techniques-heading {
     font-family: serif;
     font-size: 28px;
     color: #5e0d19;
     text-align: center;
-    margin-top: 40%;
+    margin-bottom: 10px;
 }
 
-.section-subtitle {
+.techniques-subtitle {
     font-family: serif;
     font-size: 16px;
     color: #494747;
@@ -218,37 +221,52 @@
     margin-bottom: 30px;
 }
 
-/*container layout*/
+/* Container layout */
 .technique-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
-    padding: 20px;
 }
 
-/* technique boxes */
+/* Technique card */
 .technique {
+    width: 500px;                                                                                           
     background: #fdfcfc;
     border: 2px solid #5e0d19;
     border-radius: 12px;
     padding: 20px;
-    max-width: 250px;
-    text-align: center;
+    display: grid; 
+    grid-template-columns: 80px 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 20px;               
+    row-gap: 10px;                   
+    align-items: start;     
+    box-sizing: border-box;
 }
 
-/*Icons*/
+/* Icon */
 .technique-icon {
-    width: 80px;
-    height: auto;
-    margin-bottom: 15px;
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    grid-column: 0;
+    grid-row: 1;              
 }
 
-/* Headings */
+/* Text block */
+.technique-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Headings inside card */
 .technique-heading {
     font-family: serif;
     font-size: 20px;
     color: #5e0d19;
-    margin-bottom: 10px;
+    margin: 0;
 }
 
 /* Description */
@@ -256,21 +274,35 @@
     font-family: serif;
     font-size: 15px;
     color: #494747;
-    margin-bottom: 10px;
+    margin: 0;
 }
 
 /* Label */
 .technique-label {
+    grid-column: 1;
+    grid-row: 2;
     font-family: serif;
-    font-size: 14px;
+    font-size: 12px;
     color: #5e0d19;
     font-weight: bold;
+    margin-top: -5px;
+    padding: 4px 10px;
+    border-radius: 8px;
+    background: #ffcbd3;
+    width: fit-content;
+
 }
 
 /* Mobile layout */
 @media (max-width: 768px) {
-    .technique-container {
+    .technique {
+        width: 90%;
         flex-direction: column;
+        text-align: center;
         align-items: center;
+    }
+
+    .technique-text-block {
+        text-align: center;
     }
 }
