@@ -194,3 +194,83 @@
 .selfdefence-icon {
         margin-bottom: 20px;
 }
+
+/* Techniques Sections*/
+.Essential-techniques {
+    padding: 40px;
+    background-color: #ffe1e1;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Techniques Title*/
+.technique-heading {
+    font-family: serif;
+    font-size: 28px;
+    color: #5e0d19;
+    text-align: center;
+    margin-top: 40%;
+}
+
+.section-subtitle {
+    font-family: serif;
+    font-size: 16px;
+    color: #494747;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/*container layout*/
+.technique-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+/* technique boxes */
+.technique {
+    background: #fdfcfc;
+    border: 2px solid #5e0d19;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 250px;
+    text-align: center;
+}
+
+/*Icons*/
+.technique-icon {
+    width: 80px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Headings */
+.technique-heading {
+    font-family: serif;
+    font-size: 20px;
+    color: #5e0d19;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.technique-description {
+    font-family: serif;
+    font-size: 15px;
+    color: #494747;
+    margin-bottom: 10px;
+}
+
+/* Label */
+.technique-label {
+    font-family: serif;
+    font-size: 14px;
+    color: #5e0d19;
+    font-weight: bold;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    .technique-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
