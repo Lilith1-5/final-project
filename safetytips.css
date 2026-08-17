@@ -1,3 +1,7 @@
+body{
+    background: #bfbfbf;
+}
+
 /* off-screen-menu*/
 .off-screen-menu {
   display: flex;
@@ -132,4 +136,99 @@
 .off-screen-menu li:hover .iconinfo {
     opacity: 0.95;
     transform: translateY(-50%) translateX(5px);
+}
+
+/* Main layout */
+.main-container {
+    padding: 40px;
+    margin: 40px;
+}
+
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 40px;
+    justify-items: center;
+    grid-auto-flow: row dense;
+    align-items: start;
+}
+
+/* Card */
+.tips-container {
+    width: 500px;
+    background: #fdfcfc;
+    border: 1px solid #5e0d19;
+    border-radius: 12px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+    align-self: flex-start;
+}
+
+/* Clickable header */
+.tips-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+/* icon */
+.tips-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+}
+
+/* Text */
+.tips-text-block {
+    flex: 1;
+    margin-left: 15px;
+}
+
+.tips-heading {
+    font-family: serif;
+    font-size: 22px;
+    color: #5e0d19;
+    margin: 0;
+    z-index: 5;
+}
+
+.tips-description {
+    font-family: serif;
+    font-size: 15px;
+    color: #494747;
+    margin: 5px 0 0 0;
+}
+
+/* Arrow */
+.tips-arrow {
+    font-size: 26px;
+    color: #5e0d19;
+    transition: transform 0.3s ease;
+}
+
+/* arrow (rotates when clicked) */
+.tips-container.open .tips-arrow {
+    transform: rotate(180deg);
+}
+
+/* content */
+.tips-dropdown {
+    max-height: 0;
+    overflow: hidden;
+    background: #ffe1e1;
+    border-radius: 10px;
+    padding: 0 20px;
+    transition: max-height 0.4s ease;
+}
+
+/* dropdown list */
+.tips-dropdown ul {
+    padding: 15px 0;
+    margin: 0;
+    font-family: serif;
+    font-size: 16px;
+    color: #333;
 }
