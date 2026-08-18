@@ -1,4 +1,8 @@
-/* off-screen-menu*/
+body{
+    background: #e0dfdf;
+}
+
+/* off screen menu*/
 .off-screen-menu {
   display: flex;
   position: fixed;
@@ -159,7 +163,7 @@
 
 .text-container {
     background: #fdfcfc;
-    border: 2px solid #5e0d19;
+    border: 1px solid #5e0d19;
     border-radius: 12px;
     padding: 25px;
     max-width: 500px;
@@ -198,7 +202,7 @@
 /* Techniques Sections*/
 .Essential-techniques {
     padding: 40px;
-    background-color: #ffe1e1;
+    background-color: #e6dede;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 40px;
     border-radius: 10px;
@@ -233,7 +237,7 @@
 .technique {
     width: 500px;                                                                                           
     background: #fdfcfc;
-    border: 2px solid #5e0d19;
+    border: 1px solid #5e0d19;
     border-radius: 12px;
     padding: 20px;
     display: grid; 
@@ -243,9 +247,17 @@
     row-gap: 10px;                   
     align-items: start;     
     box-sizing: border-box;
+    cursor: pointer;
 }
 
-/* Icon */
+.technique:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    transition: 0.2s ease;
+    background-color:#f8ebed;
+}
+
+/* Icons */
 .technique-icon {
     width: 70px;
     height: 70px;
@@ -304,5 +316,54 @@
 
     .technique-text-block {
         text-align: center;
+    }
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur 20px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index:999999;
+}
+
+.modal-box {
+    background: #fff;
+    width: 70%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.3);
+    animation: popup 0.3s ease;
+    font-family: serif;
+    color: #333;
+    position: relative;
+}
+
+/* Close button (popup card)*/
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    color: #5e0d19;
+}
+
+/* Animation */
+@keyframes popup {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
     }
 }

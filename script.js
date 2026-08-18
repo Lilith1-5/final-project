@@ -40,4 +40,14 @@ function prevFact() {
 
 updateFacts();
 
+function openModal(title, text, target) {
+    document.getElementById("modal-title").innerText = title;
+    document.getElementById("modal-text").innerText = text;
+    document.getElementById("modal-target").innerText = target;
 
+    document.getElementById("modal-overlay").style.display = "flex";
+}
+
+function closeModal() {
+    document.getElementById("modal-overlay").style.display = "none";
+}
