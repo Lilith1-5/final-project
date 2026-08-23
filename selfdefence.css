@@ -393,3 +393,19 @@ body{
         opacity: 1;
     }
 }
+
+.link-box {
+    text-align: center;
+    padding: 20px;
+}
+
+.safe-btn {
+    display: inline-block;
+    background: #5e0d19;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 10px;
+}

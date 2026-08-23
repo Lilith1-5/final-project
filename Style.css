@@ -141,9 +141,9 @@ body {
     transform: translateY(-50%) translateX(5px);
 }
 
-/* Hero Section */
+/* Banner Section */
 
-.hero {
+.banner {
     padding: 120px 40px;
     text-align: center;
     background-image: url("Images/Banner-Homepage.jpg");
@@ -153,14 +153,14 @@ body {
 }
 
 
-.hero h1 {
+.banner h1 {
     font-size: 60px;
     margin-bottom: 10px;
 }
 
-.hero p {
+.banner p {
     font-size: 20px;
-    color: #555;
+    color: #d2d1d1;
 }
 
 /* Emergency Box 111*/
