@@ -35,6 +35,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between; 
+    background-color: #fefefe;
     padding: 0 20px;
     z-index: 9999;
 }
@@ -166,7 +167,12 @@ body{
 .safety-icon {
     width: 200px;
     height: 200px;
-    margin-left: 42%;
+}
+
+.safetyicon-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
 }
 
 /* Main layout */
@@ -179,8 +185,9 @@ body{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 40px;
-    column-count: 2;
-    column-gap: 40px;
+    justify-items: center;
+    grid-auto-flow: row dense;
+    align-items: start;
 }
 
 /* Card */
@@ -194,7 +201,6 @@ body{
     box-shadow: 0 0 15px rgba(0,0,0,0.1);
     transition: 0.3s ease;
     align-self: flex-start;
-    break-inside: avoid;
     margin-bottom: 40px;
 }
 
