@@ -1,5 +1,6 @@
 body{
     background: #ebebeb;
+    padding-bottom: 70px;
 }
 
 /* off screen menu*/
@@ -394,6 +395,11 @@ body{
     }
 }
 
+.course-text {
+    font-size: 20px;
+    text-align: center;
+    padding-top: 50px;
+}
 .link-box {
     text-align: center;
     padding: 20px;
@@ -409,3 +415,11 @@ body{
     font-weight: 600;
     margin-top: 10px;
 }
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
